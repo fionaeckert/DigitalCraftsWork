@@ -1,0 +1,12 @@
+#!/bin/bash
+echo mkdir assets
+echo mkdir css
+echo cd css
+echo touch styles.css
+echo cd ..
+echo touch index.html
+echo mkdir js
+echo cd js
+echo touch script.js
+echo cd ..
+chmod u+x my-project
