@@ -1,0 +1,71 @@
+To upload something to GitHub:
+git add {nameoffile}
+git commit -m {message saying why you marked up the file}
+git push
+
+To get out of weird error screen:
+:q
+
+To completely leave a directory and go back to like the home or whatever:
+cd ~
+
+To go up a level in the directory:
+cd ..
+
+To remove a folder:
+rm -rf {folder name}
+
+Github is a cloud storage unit
+Git allows us to communicate between our local machine and GitHub
+
+1. git pull: brings changes from Github onto local machine
+2. git status: checks the difference between the latest version of the remote version (github) and the local version (your machine) of a file
+3. make changes to code
+4. git add: adds change that has occurred on latest version; stages that change
+    - you can add all changes you've made with git add .
+    but if you just wanna add the changes to a specific file -- git add {nameoffile}
+    - if you're in a nested folder, higher up changes will not be added if you use git add .
+5. git commit -m {message of what was done}: gives changes an ID (identification); always attach message to list of files changed
+    - every time you make a commit it makes a new version; think of it as the save button
+6. git push: pushes file changes from machine (local) to Github (remote branch)
+7. git pull: brings changes from Github onto local machine
+
+git restore --staged {file name}: to unstage something
+
+If you need to add a new working directory:
+- File --> Add folder to workspace --> navigate to the folder you want to add --> select it and click "Add"
+------------------------------------------------------------------------------------------------------------------
+Week1Day2
+Branches
+pull requests: review process for adding code to a repo; usually involves 2 reviewers; merging 2 Branches
+
+typing clear in the terminal removes all of the excess text
+
+before creating a new branch, always perform a git pull
+any time you see a branch with a * next to it, that's the branch you're in 
+any time you see origin, that means the branch is the OG in github
+
+git checkout: allows you switch Branches
+git checkout -: takes you to the previous branch you were on
+
+when performing a pull request and there are conflicts:
+- first box in GitHub represents what you wrote
+- second box in GitHub represents what's on main 
+
+to merge changes from one person's branch to another you have to be within your own personal branch. you cannot just be in the main
+
+git checkout -b {path of branch}: creates a new branch and automatically takes you to it
+
+every time you make a change that you know is good and you want to keep it, push it
+
+rebasing is seen as less destructive
+- places the new branch on top of the old
+- seen as safer if you have apprehension about deleting work
+- rebasing is an alternative to solving a merge conflict
+- rebase requires a few more extra steps
+- merge is better if you're working on one thing in a silo (i.e. no one else is working on it)
+- rebase is better if you're working with multiple people on one thing
+------------------------------------------------------------------------------------------------------------------
+day 4
+
+
