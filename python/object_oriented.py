@@ -1,83 +1,6 @@
-#Functions are used to make your modular and to avoid having to rewrite code
-#Whenever we call a function we type in the name exampleFunction(...)
-#The ... means you need to put in parameters
-#Parameters are values that a function receives. The parameters are variables that are created and can only be used within the scope of the function
+import random
+random.random()
 
-#The scope of this function is only lines 5-6, therefore date cannot be called on line 11
-from array import array
-from unittest.util import strclass
-
-
-date=12
-def whatsTheDate(date:int)->str:
-    return "Today's date is %s"% date
-
-whatsTheDate(8)
-print(date)
-#inside the function, the date is 8. outside the function the date is 12.
-
-#functions can call other functions
-def whatsTheMonth(month: str):
-    return 'We are in the month of %s.'% month
-    #calling the previous functioon to print the date
-    print(whatsTheDate(8))
-
-whatsTheMonth('August')
-
-def dateTeller(month:str,date:str,year:str)->str:
-    print(whatsTheMonth(month), whatsTheDate(date), year)
-dateTeller('August','8','2022.')
-
-#tuples
-#can store two values to one variable. not mutable meaning values cannot be changed after instatiation
-my_favorite_colors=('blue','purple')
-print(type(my_favorite_colors))
-print(my_favorite_colors[0])
-
-#has a few applications like dice games, etc.
-diceRoll=(3,5)
-diceRoll[0]=1       #this won't work because tuples are not mutable
-arrayDiceRoll=[3,5]
-arrayDiceRoll[0]=1      #this works because arrays are mutable
-print(arrayDiceRoll)
-
-Chicago=(34.12345,43.12234)
-#tuples can extend beyond 2 objects
-#---------------------------------------------------------------------------------------------------------
-#given a string, create a function that returns the string reversed
-
-def reverse(string:str)->str:
-    reverseString=string[::-1]
-    return reverseString
-print(reverse('Hello world'))
-
-#slicing
-#changes the way we iterate over a string or a list
-#the first number represents the index we are starting at
-#the second number is our ending index
-#the last number dictates how many numbers to skip by
-
-#lets get the odd numbers from a string
-number = '1234567890'
-print(number[0:9:2]) #prints all odd numbers
-print(number[::2]) #does the same thing as the above
-print(number[1:9:2]) #prints all even numbers
-
-#now get the prime numbers in reverse order
-#prime number is any number >1 and is only divisible by 1 and itself
-#finish for homework
-reverseOrder=number[::-1]
-primeNumbers=[]
-for prime in reverseOrder:
-    if int(prime) % 2==1 and int(prime) > 1:
-        primeNumbers.append(prime)
-    elif reverseOrder 
-print(primeNumbers)
-
-#Edge case of slicing
-print(number[3:9:-2]) #there's no way to start at the end of the array but also start at index 3
-
-#---------------------------------------------------------------------------------------------------------
 #Object oriented programming
 #class is a definition of an object
 #classes are mutable 
@@ -99,7 +22,7 @@ class Pokemon:
             "Paralyzed": False
             }
     
-    def __run(self):
+    def run(self):
         print('You fled the battle.')
     def useItem(self, item):
         print('You used the %s.' % item) 
@@ -122,8 +45,12 @@ class Pikachu(Pokemon):
             self.hp += hp
 
     def useItem(self, item):
-        print('You used the %s.'% item)
-        print("It's still Pikachu's turn, select a move!")
+        chance = random.random()*100
+        if chance < 70:
+            print(super().useItem(item)) #super() jumps up to the parent class 
+        elif chance >= 70 and chance <100:
+            print('You used the %s.'% item)
+            print("It's still Pikachu's turn, select a move!")
 
 class Electrabuzz(Pokemon):
     def thunderbolt(self):
@@ -190,9 +117,9 @@ steven.thunderbolt()
 # ivy.razorLeaf()
 
 
-pikachu.useItem('elder berry') #this prints that pikachu used the cure. it DOES NOT PRINT that it's still Pikachu's turn because it was created within the Pokemon class
-steven.useItem('cure') #this prints that steven used the cure AND that it's still Pikachu's turn because it was created within the Pikachu class
-steven.setHp(100000) #this prints an error due to the private variables defined above
+# pikachu.useItem('elder berry') #this prints that pikachu used the cure. it DOES NOT PRINT that it's still Pikachu's turn because it was created within the Pokemon class
+# steven.useItem('cure') #this prints that steven used the cure AND that it's still Pikachu's turn because it was created within the Pikachu class
+# steven.setHp(100000) #this prints an error due to the private variables defined above
 
 #Create a cat/dog game, create a class for both the cat and dog. both animals should have: breed, weight, fur color, name. each animal must make their own unique sound. create cat/dog class which can do everything that both animals can do but in its own way
 
@@ -211,3 +138,4 @@ steven.setHp(100000) #this prints an error due to the private variables defined 
 #             "Poisoned":False,
 #             "Paralyzed": False
 #             }
+steven.useItem('potion',80) #this determiness what will return from lines 45-50
