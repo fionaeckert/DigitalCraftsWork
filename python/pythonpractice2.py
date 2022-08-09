@@ -14,3 +14,4 @@ while len(ordinalList) > 0:
     ordinal = ordinalList.pop()
     reversedOrdinalList.append(ordinal)
 print(reversedOrdinalList)
+#---------------------------------------------
