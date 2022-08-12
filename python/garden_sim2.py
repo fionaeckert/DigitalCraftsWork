@@ -10,39 +10,9 @@ each turn: rain or woodchuck
 import random
 
 # Classes
-class Tree:
-    def __init__(self):
-        self.chance = 15
-        self.rain = 25
-
-# class FruitTree(Tree):
-#     def __init__(self):
-#         super().__init__()
-#         self.water_level = 0
-#         self.fruit = 0
-
-#     def harvest(self):
-#         if self.water_level >= 100:
-#             self.fruit += 1
-#             self.water_level = 0
-#             print('One of your fruit trees has produced fruit!')
-
-class Woodchuck:
-    def __init__(self):
-        self.disappearingTreeChance = 5
-  
-class Gnome: 
-    def __init__(self):
-        self.rainChance = 5
-
-class Hunt():
-    def __init__(self):
-        self.uses = 3
-
 class Garden:
     def __init__(self):
         self.trees = []
-        # self.fruitTrees = []
         self.woodchucks = []
         self.gnomes = []
         self.waterLevel = 300
@@ -50,46 +20,22 @@ class Garden:
         self.rainChance = 25
         self.woodchuckChance = 10
         self.disappearingTreeChance = 0
-        # self.fruit = 0
+        self.fruit = 0
         hunt = Hunt()
         self.uses = hunt.uses
 
 # Functions        
-    def addTree(self):
-        # if self.chance() > 15:
-            tree = Tree()
-            self.trees.append(tree)
-            print('A new tree has blossomed!')
-        # else: 
-        #     fruitTree = FruitTree()
-        #     self.fruitTrees.append(fruitTree)
-        #     print('A new fruit tree has blossomed!')
-        
-    def addGnome(self):
-        gnome = Gnome()
-        self.gnomes.append(gnome)
-        self.rainChance += gnome.rainChance
-        print('The garden has been blessed with a new gnome!')
-        
-    def addWoodchuck(self):
-        woody = Woodchuck()
-        self.woodchucks.append(woody)
-        self.disappearingTreeChance += woody.disappearingTreeChance
-        print('A pesky woodchuck has entered the garden!')
-
     def rain(self):
-        self.waterLevel += 50
-        print('It rained! Water levels increased.')
+        self.waterLevel += 60
+        print(self.trees[0].water_level)
         i = 0
+        for tree in self.trees:
+            self.trees[i].water_level += 25
+            i += 1
+            print(self.trees[0].water_level)
+        print('It rained! Water levels increased.')
 
-    def hunt(self):
-        self.uses -= 1
-        if self.uses >= 0 and len(self.woodchucks) > 0:
-            print('The hound successfully hunted %d woodchucks.' % len(self.woodchucks))
-            killCount = len(self.woodchucks)
-            while killCount > 0:
-                del self.woodchucks[0]
-                killCount -= 1
+        
     
     def chance(self) -> float:
         return random.random() * 100
@@ -110,8 +56,76 @@ class Garden:
         print('Woodchucks: %d' % len(self.woodchucks))
         print('Hunts Available: %d' % self.uses)
 
+    def addTree(self):
+        # if self.chance() > 15:
+            tree = Tree()
+            self.trees.append(tree)
+            print('A new tree has blossomed!')
+            print(self.trees)
+        # else: 
+        #     fruitTree = FruitTree()
+        #     self.trees.append(fruitTree)
+        #     print('A new fruit tree has blossomed!')
+
+class Tree(Garden):
+    def __init__(self):
+        super().__init__()
+        self.chance = 10
+        self.rain = 25
+        self.water_level = 0
+        # super().addTree()
+
+class FruitTree(Tree):
+    def __init__(self):
+        super().__init__()
+        self.fruit = 0
+
+    def harvest(self):
+        if self.water_level >= 100:
+            self.fruit += 1
+            self.water_level = 0
+            print('One of your fruit trees has produced fruit!')
+
+class Woodchuck(Garden):
+    def __init__(self):
+        self.disappearingTreeChance = 5
+    
+    def addWoodchuck(self):
+        woody = Woodchuck()
+        self.woodchucks.append(woody)
+        self.disappearingTreeChance += woody.disappearingTreeChance
+        print('A pesky woodchuck has entered the garden!')
+  
+class Gnome(Garden): 
+    def __init__(self):
+        self.rainChance = 5
+
+    def addGnome(self):
+        gnome = Gnome()
+        self.gnomes.append(gnome)
+        self.rainChance += gnome.rainChance
+        print('The garden has been blessed with a new gnome!')
+
+class Hunt(Garden):
+    def __init__(self):
+        self.uses = 3
+    
+    def hunt(self):
+        self.uses -= 1
+        if self.uses >= 0 and len(self.woodchucks) > 0:
+            print('The hound successfully hunted %d woodchucks.' % len(self.woodchucks))
+            killCount = len(self.woodchucks)
+            while killCount > 0:
+                del self.woodchucks[0]
+                killCount -= 1
+
 # Simulation loop
 garden = Garden()
+garden.addTree()
+garden.addTree()
+print(garden.trees[0].water_level)
+garden.rain()
+print(garden.trees[0].water_level)
 i = 1
 newTree = 0
 rainChance = garden.rainChance
@@ -171,10 +185,13 @@ while len(garden.trees) < 10 and garden.waterLevel > 0:
 
 # Win and lose conditions
 if len(garden.trees) >= 10:
+    print('---------------------------------------------')
+    print('Round %d' % i)
     print('You have won!')
     garden.getStats()
 elif garden.waterLevel <= 0:
+    print('---------------------------------------------')
+    print('Round %d' % i)
     print('You have lost!')
     garden.waterLevel = 0
     garden.getStats()
-
