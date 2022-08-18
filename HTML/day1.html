@@ -1,0 +1,72 @@
+<!-- ! creates the template for any HTML page -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>day1</title>
+    <link rel="stylesheet" href="../CSS/day1.css">
+  <!-- </head>
+  <body>
+    A div is a box that is used to organize the elements on the screen
+    <div>
+      where all of the content is going to go -->
+      <!-- This is a header, which is generally placed at the top of the screen. It comes in 6 sizes, 1 largest and 6 smallest. -->
+      <!-- <h3>This is a preview</h3> -->
+      <!-- This is a line break -->
+      <!-- <br /> -->
+      <!-- If you wanna look at a file from the current directory, the proper way to point a computer there is by using a ./
+    This refers to the current directory where the image lives. Image won't show for me because I don't have the image downloaded into this folder.
+      to go back one directory, do ../
+      <img src="./html5.png" alt="HTML image" width = 300px length = 300px/>
+      <p>
+        <b>HTML5</b> is the latest standard for web browsers. It is understood
+        by <u>all</u> <i>major</i> browsers.
+      </p>
+      <ol>
+        <li><a href="https://google.com/chrome/">Chrome</a></li>
+        <li><a href="https://www.mozilla.org/en-US/firefox/new">Firefox</a></li>
+        <li>Safari</li>
+        <li>Safari</li>
+        <li>Edge</li>
+      </ol>
+      ul is unordered list (i.e. bullets) ol is ordered list (i.e. 1,2,3) -->
+      <!-- <a href="https:www.espn.com">Link to ESPN's website</a>
+    </div>
+  </body>
+</html>
+
+
+Forms -->
+
+<form>
+  <fieldset>
+    <div>
+      <h1>Spotify</h1>
+    </div>
+    <p>
+      <label for="Username">Username</label>
+      <!-- type tells the browser what constant will be in the box -->
+      <input type="text" name="username" class="textbox" id="username-box" placeholder="Username" />
+      <!-- class = reusability */ -->
+      <!-- id is more specific */ -->
+    </p>
+    <p>
+      <label for="Password">Password</label>
+      <input type="password" name="password" class="textbox" id="password-box" placeholder="Password" />
+
+    </p>
+    <p>
+      <a href="https:www.forgot.com">Forgot password?</a>
+    </p>
+    <p>
+      <label for="Remember Me">Remember Me</label>
+      <input type="checkbox" name="remember" id="remember-box" />
+    </p>
+
+  </fieldset>
+  <!-- we use the submit type for the log in button -->
+  <input type="submit" id="loginButton" value="Login">
+</form>
