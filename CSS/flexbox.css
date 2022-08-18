@@ -1,0 +1,24 @@
+.container{
+    display:flex;
+    /* padding:15px;
+    margin-right: 10px; */
+    /* flex direction reverses order of contents starting on the right side */
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+.linkedin{
+    width:150px;
+    height:150px
+}
+
+.number{
+    flex-grow: 2;
+    border:3px solid yellow
+}
+
+.numbers{
+        flex-grow: 2;
+        border:3px solid pink
+}

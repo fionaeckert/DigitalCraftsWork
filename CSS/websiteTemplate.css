@@ -1,0 +1,56 @@
+body{
+    font-size: 24px;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2{
+    margin: 0
+}
+
+.header,
+.sidebar-left,
+.sidebar-right{
+    padding: 25px;
+}
+
+.header{
+    border-bottom: 3px dotted rgb(37, 18, 113);
+    background-color: wheat;
+}
+.main{
+    background-color: rgb(55, 145, 100);
+    order:2
+}
+
+.structure{
+    display:flex;
+    min-height: 100px;
+    flex-direction: column;
+}
+
+.sidebar-left{
+    order:1;
+    width:20%;
+    background-color: rgb(254, 172, 113);
+    margin: 10px
+}
+.content{
+    display: flex;
+    flex:1;
+    margin: 10px
+    
+}
+.sidebar-right{
+    order: 3;
+    width:30%;
+    background-color: rgb(135, 135, 250);
+    margin: 10px
+}
+
+.footer{
+    border-top: 3px dotted rgb(37, 18, 113);
+    background-color: wheat;
+
+}
+

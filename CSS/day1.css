@@ -1,0 +1,50 @@
+/* To access the basic HTML tags, type in whatever the name of the tag is */
+form {
+    background-color: lavender;
+
+}
+
+/* . references a class # references an object */
+
+/* We use the hashtag to access IDs. 
+IDs should be UNIQUE - NO TWO ELEMENTS SHOULD HAVE THE SAME ID */
+/* class = reusability */
+/* id is more specific */
+
+#loginButton {
+    background-color: gold;
+    align-content: center;
+}
+
+
+/* To access/style a class, use the . in front of the class name (i.e. .className)
+A class is  */
+
+.textbox{
+    width:100px;
+    background-color: lightgray
+
+}
+
+/* styling below only applies to text in h1 tags within div tags */
+div > h1 {
+    text-align: center;
+    margin:50px
+}
+
+
+form {
+    display: inline-block;
+    margin:50px
+}
+
+
+#remember-box{
+    text-align: center;
+    margin:50 px
+}
+
+#loginButton{
+    text-align: center;
+    margin:50 px
+}
