@@ -58,3 +58,4 @@ print(winners(players))
 #1. what are you going to be doing to the structure (i.e. are you adding things to it?)
 #2. for the objects that exist in the structure, are they unique or is it possible that there are duplicates?
     # if there are duplicates, dicitonaries are really useful
+
