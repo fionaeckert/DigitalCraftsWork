@@ -1,0 +1,23 @@
+.row{
+    display: flex;
+}
+
+/* default square background color */
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: white; 
+    border: .5px solid black
+}
+
+#x{
+    width: 75px;
+    height: 75px;
+    align-self: center;
+}
+
+#o{
+    width: 75px;
+    height: 75px;
+    align-self: center;
+}

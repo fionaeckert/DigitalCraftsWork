@@ -1,0 +1,83 @@
+body{
+    --dark-color: purple;
+    --light-color: white;
+}
+
+/* allows the boxes to appear side by side */
+
+.layout{
+    display: flex;
+}
+
+.row{
+    display:flex;
+}
+
+/* default square background color */
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: var(--light-color); 
+    border: .5px solid black
+}
+/* make even squares, odd rows purple */
+.square:nth-child(even){
+    background-color: var(--dark-color);
+
+/* odd squre even row */
+}
+.row:nth-child(even) .square{
+    background-color: var(--dark-color);
+}
+
+/* even square in even row */
+.row:nth-child(even) .square:nth-child(even){
+    background-color: var(--light-color);
+}
+
+/* TODO: make board adjust according to screen size */
+.board{
+    width:40%
+}
+
+.menu{
+    width:40%;
+    margin-left:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title{
+    text-align: center;
+}
+/* align-items you use within actual flex box */
+/* align-self is what you can use within the child class */
+.start{
+    display: flex;
+    justify-content: center;
+    height:100%;
+    align-items:flex-end;
+}
+
+.players{
+    display: flex;
+    
+}
+
+.startButton{
+    background-color: green;
+    height:30px
+}
+.name{
+    display: flex;
+    margin: 15px;
+}
+#player2{
+    display:flex;
+    align-self: center;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 100%;
+}
