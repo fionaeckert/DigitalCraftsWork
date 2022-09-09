@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dom.css">
+</head>
+    <body>
+        <form>
+        <h1 id=header>Nav</h1>
+        <ul id="nav-list"></ul>
+            <li class="link">Home</li>
+            <li class="link">About</li>
+            <li class="link">Contact Us</li>
+            <li class="link">Careers</li>
+        <fieldset>
+            <div>
+                <h1>Spotify</h1>
+            </div>
+            <div>
+                <legend>User Login</legend>
+                <p>
+                    <label for="Username">Email</label>
+                    <!-- type tells the browser what content will be in the input box -->
+                    <input type="email" name="username" class="textbox" id="username" placeholder="Username" />
+                </p>
+                <p>
+                    <label for="Password">Password</label>
+                    <input type="password" title="letters or numbers, no special characters" pattern="A-Za-z0-9" minlength="4" maxlength="12" class="textbox" name="password" id="password" placeholder="Password" />
+                </p>
+                <p>
+                    <label for="code">Type in Security Code</label>
+                    <input type="number" name="username" maxlength="4" class="codebox" id="username" placeholder="Code" />
+                </p>
+                <a href="https://www.spotify.com/us/password-reset/">Forgot Password?</a>
+                <p>
+                    <label for="Remember Me">Remember Me</label>
+                    <input type="checkbox" name="remember" id="remember-box" />
+                </p>
+            </div>
+            <button type="submit" onclick="getUserInfo()">Login</button>
+            <a href="./register.html">Register Here</a>
+        </fieldset>
+    </form>
+    </body>
+</html>
+<script src="./dom.js"></script>

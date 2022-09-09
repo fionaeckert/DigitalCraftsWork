@@ -1,0 +1,26 @@
+.dogpic{
+    width:350px;
+    height:300px;
+    position: relative;
+    animation-name: left-to-right right-to-left;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes left-to-right {
+    from{
+        left: 0;
+    }
+    to{
+        left:82%;
+    }
+}
+
+@keyframes right-to-left{
+    from{
+        right:82%
+    }
+    to{
+        right:0%
+    }
+}

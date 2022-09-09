@@ -1,0 +1,31 @@
+#title {
+   text-align: center;
+}
+
+#showMore{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+}
+
+.card {
+    width: 10%;
+    height: 20%;
+    padding: 1%;
+    margin: 10px;
+}
+
+.btn btn-secondary {
+    border-radius: 10px;
+}
+
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
