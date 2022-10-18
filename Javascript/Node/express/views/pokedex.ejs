@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h2>Your Pokedex</h2>
+        <ul>
+        <% pokedex.forEach(function(pokemon) { %>
+            <li>Name: <%= pokemon.name %> HP: <%= pokemon.hp %></li>
+       <% }); %>
+    </ul>
+    </body>
+</html>

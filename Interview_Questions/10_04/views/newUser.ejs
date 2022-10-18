@@ -1,0 +1,46 @@
+<!-- Create a webpage that creates a new user for an app. 
+    The page should take the user's first and last name, email, and address(street, zip, state). 
+    Collect this info and store it in a database -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./newUser.css">
+    <title>Create New User</title>
+</head>
+<body>
+    <form action="/createuser" method="post" onsubmit="createUser()">
+        <div>
+            <h3>Please enter your information below:</h3>
+        </div>
+        <div>
+            <div class="box">
+                <label for="firstName">First Name</label>
+                <!-- type tells the browser what content will be in the input box -->
+                <input type="text" class="form-control" id="firstName-box" placeholder="First Name" required/>
+            </div>
+            <div class="box">
+                <label for="lastName">Last Name</label>
+                <!-- Pattern uses regular expressions to check the value passed by the user -->
+                <input type="text" class="form-control" id="lasttName-box" placeholder="Last Name" required/>
+            </div>
+            <div class="box">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" id="email-box" placeholder="Email" required/>
+            </div>    
+            <div class="box">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="street-box" placeholder="Street" required/>
+                <input type="text" class="form-control" id="state-box" placeholder="State" required/>
+                <input type="number" class="form-control" id="zip-box" placeholder="Zip Code" required/>
+            </div>          
+            <button type="submit" id="registerBtn">Login</button>
+        </div>
+    </form>
+    
+</body>
+<script src="../index.js"></script>
+</html>

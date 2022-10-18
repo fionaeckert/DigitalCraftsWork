@@ -71,7 +71,7 @@ primeNumbers=[]
 for prime in reverseOrder:
     if int(prime) % 2==1 and int(prime) > 1:
         primeNumbers.append(prime)
-    elif reverseOrder 
+    #elif reverseOrder
 print(primeNumbers)
 
 #Edge case of slicing

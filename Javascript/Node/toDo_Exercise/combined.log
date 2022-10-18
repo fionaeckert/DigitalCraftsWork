@@ -1,0 +1,98 @@
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-21T20:33:41.711Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-21T20:33:45.115Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-21T20:35:09.158Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"walk the dog","number":4},"path":"/todo/","time":"2022-09-21T20:36:58.226Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"walk the dog","number":"hi!"},"path":"/todo/","time":"2022-09-21T20:37:10.075Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":12345,"number":5},"path":"/todo/","time":"2022-09-21T20:37:21.335Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:42:05.380Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:42:25.205Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:43:18.961Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:44:02.128Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:45:33.169Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"PUT","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:47:46.196Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-21T20:47:56.241Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"PUT","body":{"chore":"wash clothes","number":5},"path":"/todo/","time":"2022-09-21T20:48:58.676Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:52:36.257Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:53:06.567Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:56:47.887Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:57:28.392Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"wash clothes","number":2},"path":"/todo/","time":"2022-09-21T20:57:41.534Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash clothes","number":2},"path":"/","time":"2022-09-22T18:39:06.167Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash clothes","number":2},"path":"/","time":"2022-09-22T18:42:59.496Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T18:43:14.108Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:48:15.896Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:48:42.356Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:50:13.956Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:50:16.207Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:51:01.990Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:51:21.187Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:51:45.564Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:53:51.645Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/","time":"2022-09-22T18:54:34.924Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"take out trash","number":4},"path":"/todo","time":"2022-09-22T18:56:20.016Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-22T18:56:27.650Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-22T18:56:34.254Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T18:57:25.536Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T18:58:05.251Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T18:58:10.991Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T18:58:36.213Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T18:59:31.214Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:00:09.723Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:00:28.229Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:01:53.890Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:06:11.300Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:07:00.993Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:07:07.371Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:07:28.492Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:07:39.625Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:07:44.616Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:08:08.887Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:08:20.819Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:08:26.446Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:09:15.308Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"wash dishes","number":1},"path":"/","time":"2022-09-22T19:09:23.746Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:09:29.407Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:09:32.977Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:12:23.248Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/favicon.ico","time":"2022-09-22T19:12:23.383Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:16:08.546Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:16:41.674Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:21:30.238Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:21:41.458Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:22:58.209Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:23:55.187Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:24:15.307Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"number":1},"path":"/","time":"2022-09-22T19:24:46.088Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"washing dishes","number":4},"path":"/todo","time":"2022-09-22T19:37:14.141Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"POST","body":{"chore":"washing dishes","number":4},"path":"/todo","time":"2022-09-22T19:38:48.699Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-22T19:41:38.713Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:41:50.149Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:42:43.144Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:43:19.583Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:43:54.016Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:44:51.139Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:47:06.202Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:48:14.073Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:48:47.645Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/","time":"2022-09-22T19:55:24.990Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:45:45.746Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:46:48.193Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:48:03.658Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:50:56.845Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/todo","time":"2022-09-23T16:51:06.447Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:53:02.729Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:53:29.882Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/todo","time":"2022-09-23T16:53:52.858Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:54:54.553Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/todo","time":"2022-09-23T16:55:03.817Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:55:12.551Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:56:46.371Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/todo","time":"2022-09-23T16:58:07.177Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/todo","time":"2022-09-23T16:58:13.607Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-26T16:49:09.886Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-26T16:51:00.244Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-26T16:52:04.565Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-26T16:53:33.479Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-26T16:56:00.553Z"},"service":"toDo-service"}
+{"level":"info","message":{"action":"GET","body":{"chore":"washing dishes","number":4},"path":"/","time":"2022-09-26T17:00:49.628Z"},"service":"toDo-service"}
+{"level":"info","message":{"res_body":[{"chore":"homework","number":1},{"chore":"study","number":2},{"chore":"class","number":3}],"status_code":200,"time":"2022-09-26T17:00:49.653Z"},"service":"toDo-service"}

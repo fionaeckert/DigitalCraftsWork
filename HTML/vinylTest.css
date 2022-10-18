@@ -1,0 +1,18 @@
+body{
+    background-color: #cee5d0;
+}
+
+
+.vinylImage{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation: roll 2s linear 0s infinite;
+
+}
+
+@keyframes roll{
+    to{
+        transform: rotate(360deg);
+    }
+}

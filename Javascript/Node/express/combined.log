@@ -1,0 +1,13 @@
+{"level":"info","message":"Welcome to our Pokedex server.","service":"pokedex-service"}
+{"level":"info","message":"Welcome to our Pokedex server.","service":"pokedex-service"}
+{"level":"info","message":"Welcome to our Pokedex server.","service":"pokedex-service"}
+{"level":"warn","message":"Pokemon was not found in database.","service":"pokedex-service"}
+{"level":"warn","message":"Pokemon was not found in database.","service":"pokedex-service"}
+{"level":"info","message":"Welcome to our Pokedex server.","service":"pokedex-service"}
+{"level":"warn","message":"Pokemon was not found in database.","service":"pokedex-service"}
+{"level":"info","message":"Welcome to our Pokedex server.","service":"pokedex-service"}
+{"level":"info","message":"Welcome to our Pokedex server.","service":"pokedex-service"}
+{"level":"warn","message":"Pokemon was not found in database.","service":"pokedex-service"}
+{"level":"warn","message":"Pokemon was not found in database.","service":"pokedex-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/pokemon/","time":"2022-09-21T19:18:26.285Z"},"service":"pokedex-service"}
+{"level":"info","message":{"action":"GET","body":{},"path":"/pokemon/","time":"2022-09-21T19:23:12.408Z"},"service":"pokedex-service"}

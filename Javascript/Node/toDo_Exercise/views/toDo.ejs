@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <h2>ToDo List </h2>
+        <ul>
+            <% toDo.forEach(function(toDo) { %>
+                <li> Number: <%= toDo.number %> Chore: <%= toDo.chore %> </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>

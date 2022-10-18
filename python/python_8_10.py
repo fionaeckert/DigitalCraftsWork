@@ -77,7 +77,7 @@ def createDictFromWord(word:str) -> dict:
 
 print(isAnagram('god','dog'))
 
-create a list that has the name of everyone in the class and returns any name that is duplicated
+# create a list that has the name of everyone in the class and returns any name that is duplicated
 
 classNames = ['Jordan','Jordan','Kahn','Kahn','An','Jorge','Carlos','Wes','Fiona','Matt','Dez','Dre']
 
