@@ -1,0 +1,10 @@
+#loginlayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formlayout {
+    margin-top: 50px;
+    width: 25%;
+}

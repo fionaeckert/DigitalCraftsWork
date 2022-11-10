@@ -1,0 +1,26 @@
+/* intended for primary user (i.e. blue bubble) */
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.inputUser1 {
+    border-radius: 50px;
+    background-color: #1982FC;
+    
+}
+.inputUser2 {
+    border-radius: 50px;
+    background-color: #d3d3d3;   
+}

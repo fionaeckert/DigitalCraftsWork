@@ -1,0 +1,9 @@
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 775px;
+    height: 600px;
+}

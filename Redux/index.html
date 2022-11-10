@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+
+        //action creators are functions that create actions (incrementCount()); this will return an object (the action) which has the type key
+        //actions act like events; typically types inside of actions are capitalized
+        //store is the liason
+        //reduces are the event listeners; tells us how to transform (i.e. update or define) the global state; reducers are also functions
+
+        const incrementCount = () => { //action creator
+            return { //action
+                type: "INCREASE_COUNT"
+            }
+        }
+        const incrementByNum = (num) =>{ //action creator
+            return{ //action
+                type: "INCREASE_BY_NUM",
+                payload: num //payload is another key word
+            }
+        }
+        const decrementCount = () => { //action creator
+            return { //action
+                type: "DECREASE_COUNT"
+            }
+        }
+        const addContact = (id,firstName,city) =>{
+            return{
+                type: "ADD_CONTACT",
+                data: {
+                    id, firstName, city
+                }
+            }
+        }
+        const removeContact = (id) => { 
+            return{
+                type: "REMOVE_CONTACT",
+                id
+            }
+        
+        }
+
+        const reducer = (state, action) => {
+            if(state == undefined){ //if there is no state, set the state
+                state = {
+                    count:0,
+                    contacts: []
+                }
+            }
+            switch(action.type){
+                case "INCREASE_COUNT":
+                    return { //this is where the update of the global state happens
+                        ...state,
+                        count: state.count + 1
+                    }
+            }
+            switch(action.type){
+                case "DECREASE_COUNT":
+                    return { //this is where the update of the global state happens
+                        ...state,
+                        count: state.count - 1
+                    }
+            }
+            switch(action.type){
+                case "INCREASE_BY_NUM":
+                    return {
+                        ...state,
+                        count: state.count + action.payload
+                    }
+            }
+            switch(action.type){
+                case "ADD_CONTACT":
+                    return{
+                        ...state,
+                        contacts: state.contacts.concat(action.data)
+                    }
+            }
+            switch(action.type){
+                case "REMOVE_CONTACT":
+                    return{
+                        ...state,
+                        contacts: state.contacts.filter(contactObj =>{
+                            return contactObj.id !== action.id //checking to see if the payload id matches the id of the contact we're trying to remove
+                        })
+                    }
+                    default:
+                        return state
+            }
+        }
+        const store = Redux.createStore(reducer)
+
+        const showState = () => {
+            console.log(store.getState())
+        }
+
+        store.subscribe(showState) //essentially an event listener listening for changes in our global state
+
+        store.dispatch(incrementCount()) //this dispatches the event
+        store.dispatch(incrementCount()) //this dispatches the event
+        store.dispatch(incrementCount()) //this dispatches the event
+        store.dispatch(incrementCount()) //this dispatches the event
+        store.dispatch(decrementCount()) //this dispatches the event
+        store.dispatch(decrementCount()) //this dispatches the event
+        store.dispatch(decrementCount()) //this dispatches the event
+        store.dispatch(incrementByNum(3)) //this dispatches the event
+        store.dispatch(incrementByNum(4)) //this dispatches the event
+        store.dispatch(incrementByNum(2)) //this dispatches the event
+        store.dispatch(incrementByNum(1)) //this dispatches the event
+        store.dispatch(addContact(1,"Fiona","Chicago"))
+        store.dispatch(addContact(2,"Tim","Boston"))
+        store.dispatch(addContact(3,"Darcy","Wellsley"))
+        store.dispatch(removeContact(3))
+
+
+
+
+</script>
+</body>
+</html>

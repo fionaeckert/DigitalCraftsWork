@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './UserOne.css';
-import './UserTwo.css';
-import Messenger from './Messenger'
+import './Messenger.css';
 import reportWebVitals from './reportWebVitals';
+import Messengers from './Messengers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Messenger />
+    <Messengers />
   </React.StrictMode>
 );
 

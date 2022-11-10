@@ -1,0 +1,10 @@
+#navBar{
+ background-color: orange;
+ color: white;   
+ display: flex;
+ margin: 10px;
+}
+
+#navBar div{
+    margin: 20px;
+}

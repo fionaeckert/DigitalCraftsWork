@@ -1,51 +1,18 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import './Navbar.css'
 
-function BrandExample() {
+function navbar() {
   return (
-    <>
-      <Navbar bg="light">
-        <Container>
-          <Navbar.Brand href="#home">Brand link</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="light">
-        <Container>
-          <Navbar.Brand>Brand text</Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="dark">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-      <br />
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{' '}
-            React Bootstrap
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-    </>
-  );
+    //Unlike href, navlink cannot go to outside servers
+    <div id='navBar'>
+        <div><NavLink to='/'>Home</NavLink></div>
+        <div><NavLink to='/minesweeper'>Minesweeper</NavLink></div>
+        <div><NavLink to='/jokes'>Jokes</NavLink></div>
+        <div><NavLink to='/login'>Login</NavLink></div>
+
+    </div>
+  )
 }
 
-export default BrandExample;
+export default navbar

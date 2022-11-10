@@ -2,18 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import Counter from './Counter';
-// import FunctionalCounter from './FunctionalCounter';
-// import Status from './components/Status';
-// import BrandExample from './components/navbar'; 
-// import Minesweeper from './components/Minesweeper';
-// import Jokes from './Jokes'
-import App from './App'
+import ReactSite from './components/ReactSite';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
+    <ReactSite />
   </React.StrictMode>
 );
 
